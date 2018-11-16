@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 8f350a230d7e72b4fa5188ab81796f91
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: back
+    100002: bottom
+    100004: //RootNode
+    100006: Chest_CTRL
+    100008: Head_CTRL
+    100010: Hip_CTRL
+    100012: Hip_Joint
+    100014: Left_Arm_IK
+    100016: Left_Clavicle_Joint
+    100018: Left_Ear_CTRL
+    100020: Left_Ear_IK
+    100022: Left_Ear_Joint
+    100024: Left_EarTip_Joint
+    100026: Left_Elbow_Joint
+    100028: Left_Foot_CTRL
+    100030: Left_Hand_CTRL
+    100032: Left_Hand_Joint
+    100034: Left_Leg_Foot_Joint
+    100036: Left_Leg_IK
+    100038: Left_Leg_Knee_Joint
+    100040: Left_Leg_Top_Joint
+    100042: Left_Shoulder_Joint
+    100044: Left_Wrist_Joint
+    100046: Master_CTRL
+    100048: pCube1
+    100050: pSphere1
+    100052: pSphere10
+    100054: pSphere11
+    100056: pSphere3
+    100058: pSphere4
+    100060: pSphere5
+    100062: pSphere6
+    100064: pSphere7
+    100066: pSphere8
+    100068: Right_Arm_IK
+    100070: Right_Clavicle_Joint
+    100072: Right_Ear_CTRL
+    100074: Right_Ear_IK
+    100076: Right_Ear_Joint
+    100078: Right_EarTip_Joint
+    100080: Right_Elbow_Joint
+    100082: Right_Foot_CTRL
+    100084: Right_Hand_CTRL
+    100086: Right_Hand_Joint
+    100088: Right_Leg_Foot_Joint
+    100090: Right_Leg_IK
+    100092: Right_Leg_Knee_Joint
+    100094: Right_Leg_Top_Joint
+    100096: Right_Shoulder_Joint
+    100098: Right_Wrist_Joint
+    100100: Spine_Bottom_Joint
+    100102: Spine_Cranium_Joint
+    100104: Spine_Curve
+    100106: Spine_Head_Joint
+    100108: Spine_IK
+    100110: Spine_Middle_Joint
+    100112: Spine_Neck_Joint
+    100114: Spine_Top_Joint
+    400000: back
+    400002: bottom
+    400004: //RootNode
+    400006: Chest_CTRL
+    400008: Head_CTRL
+    400010: Hip_CTRL
+    400012: Hip_Joint
+    400014: Left_Arm_IK
+    400016: Left_Clavicle_Joint
+    400018: Left_Ear_CTRL
+    400020: Left_Ear_IK
+    400022: Left_Ear_Joint
+    400024: Left_EarTip_Joint
+    400026: Left_Elbow_Joint
+    400028: Left_Foot_CTRL
+    400030: Left_Hand_CTRL
+    400032: Left_Hand_Joint
+    400034: Left_Leg_Foot_Joint
+    400036: Left_Leg_IK
+    400038: Left_Leg_Knee_Joint
+    400040: Left_Leg_Top_Joint
+    400042: Left_Shoulder_Joint
+    400044: Left_Wrist_Joint
+    400046: Master_CTRL
+    400048: pCube1
+    400050: pSphere1
+    400052: pSphere10
+    400054: pSphere11
+    400056: pSphere3
+    400058: pSphere4
+    400060: pSphere5
+    400062: pSphere6
+    400064: pSphere7
+    400066: pSphere8
+    400068: Right_Arm_IK
+    400070: Right_Clavicle_Joint
+    400072: Right_Ear_CTRL
+    400074: Right_Ear_IK
+    400076: Right_Ear_Joint
+    400078: Right_EarTip_Joint
+    400080: Right_Elbow_Joint
+    400082: Right_Foot_CTRL
+    400084: Right_Hand_CTRL
+    400086: Right_Hand_Joint
+    400088: Right_Leg_Foot_Joint
+    400090: Right_Leg_IK
+    400092: Right_Leg_Knee_Joint
+    400094: Right_Leg_Top_Joint
+    400096: Right_Shoulder_Joint
+    400098: Right_Wrist_Joint
+    400100: Spine_Bottom_Joint
+    400102: Spine_Cranium_Joint
+    400104: Spine_Curve
+    400106: Spine_Head_Joint
+    400108: Spine_IK
+    400110: Spine_Middle_Joint
+    400112: Spine_Neck_Joint
+    400114: Spine_Top_Joint
+    2000000: back
+    2000002: bottom
+    2100000: lambert1
+    4300000: pCube1
+    4300002: pSphere1
+    4300004: pSphere3
+    4300006: pSphere4
+    4300008: pSphere5
+    4300010: pSphere6
+    4300012: pSphere7
+    4300014: pSphere8
+    4300016: pSphere10
+    4300018: pSphere11
+    7400000: KaluWalk
+    7400002: KaluIdle
+    7400004: KaluFall
+    7400006: KaluShadow_Walk
+    7400008: KaluProne
+    7400010: KaluCrawl
+    7400012: KaluStand
+    7400014: KaluDeath
+    7400016: KaluProne_Still
+    7400018: KaluShadow_Idle
+    9500000: //RootNode
+    13700000: pCube1
+    13700002: pSphere1
+    13700004: pSphere10
+    13700006: pSphere11
+    13700008: pSphere3
+    13700010: pSphere4
+    13700012: pSphere5
+    13700014: pSphere6
+    13700016: pSphere7
+    13700018: pSphere8
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 1
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: KaluWalk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KaluIdle
+      takeName: Take 001
+      firstFrame: 34
+      lastFrame: 338
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KaluFall
+      takeName: Take 001
+      firstFrame: 346
+      lastFrame: 370
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KaluShadow_Walk
+      takeName: Take 001
+      firstFrame: 384
+      lastFrame: 416
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KaluProne
+      takeName: Take 001
+      firstFrame: 418
+      lastFrame: 426
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KaluCrawl
+      takeName: Take 001
+      firstFrame: 426
+      lastFrame: 454
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KaluStand
+      takeName: Take 001
+      firstFrame: 456
+      lastFrame: 464
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KaluDeath
+      takeName: Take 001
+      firstFrame: 464
+      lastFrame: 488
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KaluProne_Still
+      takeName: Take 001
+      firstFrame: 491
+      lastFrame: 492
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KaluShadow_Idle
+      takeName: Take 001
+      firstFrame: 497
+      lastFrame: 498
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

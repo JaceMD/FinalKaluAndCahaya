@@ -1,0 +1,531 @@
+fileFormatVersion: 2
+guid: 2ca323afb06b9d148812ae00fe8e07cf
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Reed_Base
+    100002: Reed_Base1
+    100004: Reed_Down
+    100006: Reed_Down 1
+    100008: Reed_Down1
+    100010: Reed_Down1 1
+    100012: Reed_Down10
+    100014: Reed_Down10 1
+    100016: Reed_Down11
+    100018: Reed_Down11 1
+    100020: Reed_Down12
+    100022: Reed_Down12 1
+    100024: Reed_Down13
+    100026: Reed_Down13 1
+    100028: Reed_Down14
+    100030: Reed_Down14 1
+    100032: Reed_Down15
+    100034: Reed_Down15 1
+    100036: Reed_Down16
+    100038: Reed_Down16 1
+    100040: Reed_Down17
+    100042: Reed_Down17 1
+    100044: Reed_Down18
+    100046: Reed_Down18 1
+    100048: Reed_Down2
+    100050: Reed_Down2 1
+    100052: Reed_Down3
+    100054: Reed_Down3 1
+    100056: Reed_Down4
+    100058: Reed_Down4 1
+    100060: Reed_Down5
+    100062: Reed_Down5 1
+    100064: Reed_Down6
+    100066: Reed_Down6 1
+    100068: Reed_Down7
+    100070: Reed_Down7 1
+    100072: Reed_Down8
+    100074: Reed_Down8 1
+    100076: Reed_Down9
+    100078: Reed_Down9 1
+    100080: Reed_Up
+    100082: Reed_Up 1
+    100084: Reed_Up1
+    100086: Reed_Up1 1
+    100088: Reed_Up10
+    100090: Reed_Up10 1
+    100092: Reed_Up11
+    100094: Reed_Up11 1
+    100096: Reed_Up12
+    100098: Reed_Up12 1
+    100100: Reed_Up13
+    100102: Reed_Up13 1
+    100104: Reed_Up14
+    100106: Reed_Up14 1
+    100108: Reed_Up15
+    100110: Reed_Up15 1
+    100112: Reed_Up16
+    100114: Reed_Up16 1
+    100116: Reed_Up17
+    100118: Reed_Up17 1
+    100120: Reed_Up18
+    100122: Reed_Up18 1
+    100124: Reed_Up19
+    100126: Reed_Up19 1
+    100128: Reed_Up2
+    100130: Reed_Up2 1
+    100132: Reed_Up20
+    100134: Reed_Up20 1
+    100136: Reed_Up21
+    100138: Reed_Up21 1
+    100140: Reed_Up22
+    100142: Reed_Up22 1
+    100144: Reed_Up23
+    100146: Reed_Up23 1
+    100148: Reed_Up3
+    100150: Reed_Up3 1
+    100152: Reed_Up4
+    100154: Reed_Up4 1
+    100156: Reed_Up5
+    100158: Reed_Up5 1
+    100160: Reed_Up6
+    100162: Reed_Up6 1
+    100164: Reed_Up7
+    100166: Reed_Up7 1
+    100168: Reed_Up8
+    100170: Reed_Up8 1
+    100172: Reed_Up9
+    100174: Reed_Up9 1
+    100176: //RootNode
+    400000: Reed_Base
+    400002: Reed_Base1
+    400004: Reed_Down
+    400006: Reed_Down 1
+    400008: Reed_Down1
+    400010: Reed_Down1 1
+    400012: Reed_Down10
+    400014: Reed_Down10 1
+    400016: Reed_Down11
+    400018: Reed_Down11 1
+    400020: Reed_Down12
+    400022: Reed_Down12 1
+    400024: Reed_Down13
+    400026: Reed_Down13 1
+    400028: Reed_Down14
+    400030: Reed_Down14 1
+    400032: Reed_Down15
+    400034: Reed_Down15 1
+    400036: Reed_Down16
+    400038: Reed_Down16 1
+    400040: Reed_Down17
+    400042: Reed_Down17 1
+    400044: Reed_Down18
+    400046: Reed_Down18 1
+    400048: Reed_Down2
+    400050: Reed_Down2 1
+    400052: Reed_Down3
+    400054: Reed_Down3 1
+    400056: Reed_Down4
+    400058: Reed_Down4 1
+    400060: Reed_Down5
+    400062: Reed_Down5 1
+    400064: Reed_Down6
+    400066: Reed_Down6 1
+    400068: Reed_Down7
+    400070: Reed_Down7 1
+    400072: Reed_Down8
+    400074: Reed_Down8 1
+    400076: Reed_Down9
+    400078: Reed_Down9 1
+    400080: Reed_Up
+    400082: Reed_Up 1
+    400084: Reed_Up1
+    400086: Reed_Up1 1
+    400088: Reed_Up10
+    400090: Reed_Up10 1
+    400092: Reed_Up11
+    400094: Reed_Up11 1
+    400096: Reed_Up12
+    400098: Reed_Up12 1
+    400100: Reed_Up13
+    400102: Reed_Up13 1
+    400104: Reed_Up14
+    400106: Reed_Up14 1
+    400108: Reed_Up15
+    400110: Reed_Up15 1
+    400112: Reed_Up16
+    400114: Reed_Up16 1
+    400116: Reed_Up17
+    400118: Reed_Up17 1
+    400120: Reed_Up18
+    400122: Reed_Up18 1
+    400124: Reed_Up19
+    400126: Reed_Up19 1
+    400128: Reed_Up2
+    400130: Reed_Up2 1
+    400132: Reed_Up20
+    400134: Reed_Up20 1
+    400136: Reed_Up21
+    400138: Reed_Up21 1
+    400140: Reed_Up22
+    400142: Reed_Up22 1
+    400144: Reed_Up23
+    400146: Reed_Up23 1
+    400148: Reed_Up3
+    400150: Reed_Up3 1
+    400152: Reed_Up4
+    400154: Reed_Up4 1
+    400156: Reed_Up5
+    400158: Reed_Up5 1
+    400160: Reed_Up6
+    400162: Reed_Up6 1
+    400164: Reed_Up7
+    400166: Reed_Up7 1
+    400168: Reed_Up8
+    400170: Reed_Up8 1
+    400172: Reed_Up9
+    400174: Reed_Up9 1
+    400176: //RootNode
+    2100000: lambert1
+    2300000: Reed_Base
+    2300002: Reed_Base1
+    2300004: Reed_Down
+    2300006: Reed_Down 1
+    2300008: Reed_Down1
+    2300010: Reed_Down1 1
+    2300012: Reed_Down10
+    2300014: Reed_Down10 1
+    2300016: Reed_Down11
+    2300018: Reed_Down11 1
+    2300020: Reed_Down12
+    2300022: Reed_Down12 1
+    2300024: Reed_Down13
+    2300026: Reed_Down13 1
+    2300028: Reed_Down14
+    2300030: Reed_Down14 1
+    2300032: Reed_Down15
+    2300034: Reed_Down15 1
+    2300036: Reed_Down16
+    2300038: Reed_Down16 1
+    2300040: Reed_Down17
+    2300042: Reed_Down17 1
+    2300044: Reed_Down18
+    2300046: Reed_Down18 1
+    2300048: Reed_Down2
+    2300050: Reed_Down2 1
+    2300052: Reed_Down3
+    2300054: Reed_Down3 1
+    2300056: Reed_Down4
+    2300058: Reed_Down4 1
+    2300060: Reed_Down5
+    2300062: Reed_Down5 1
+    2300064: Reed_Down6
+    2300066: Reed_Down6 1
+    2300068: Reed_Down7
+    2300070: Reed_Down7 1
+    2300072: Reed_Down8
+    2300074: Reed_Down8 1
+    2300076: Reed_Down9
+    2300078: Reed_Down9 1
+    2300080: Reed_Up
+    2300082: Reed_Up 1
+    2300084: Reed_Up1
+    2300086: Reed_Up1 1
+    2300088: Reed_Up10
+    2300090: Reed_Up10 1
+    2300092: Reed_Up11
+    2300094: Reed_Up11 1
+    2300096: Reed_Up12
+    2300098: Reed_Up12 1
+    2300100: Reed_Up13
+    2300102: Reed_Up13 1
+    2300104: Reed_Up14
+    2300106: Reed_Up14 1
+    2300108: Reed_Up15
+    2300110: Reed_Up15 1
+    2300112: Reed_Up16
+    2300114: Reed_Up16 1
+    2300116: Reed_Up17
+    2300118: Reed_Up17 1
+    2300120: Reed_Up18
+    2300122: Reed_Up18 1
+    2300124: Reed_Up19
+    2300126: Reed_Up19 1
+    2300128: Reed_Up2
+    2300130: Reed_Up2 1
+    2300132: Reed_Up20
+    2300134: Reed_Up20 1
+    2300136: Reed_Up21
+    2300138: Reed_Up21 1
+    2300140: Reed_Up22
+    2300142: Reed_Up22 1
+    2300144: Reed_Up23
+    2300146: Reed_Up23 1
+    2300148: Reed_Up3
+    2300150: Reed_Up3 1
+    2300152: Reed_Up4
+    2300154: Reed_Up4 1
+    2300156: Reed_Up5
+    2300158: Reed_Up5 1
+    2300160: Reed_Up6
+    2300162: Reed_Up6 1
+    2300164: Reed_Up7
+    2300166: Reed_Up7 1
+    2300168: Reed_Up8
+    2300170: Reed_Up8 1
+    2300172: Reed_Up9
+    2300174: Reed_Up9 1
+    3300000: Reed_Base
+    3300002: Reed_Base1
+    3300004: Reed_Down
+    3300006: Reed_Down 1
+    3300008: Reed_Down1
+    3300010: Reed_Down1 1
+    3300012: Reed_Down10
+    3300014: Reed_Down10 1
+    3300016: Reed_Down11
+    3300018: Reed_Down11 1
+    3300020: Reed_Down12
+    3300022: Reed_Down12 1
+    3300024: Reed_Down13
+    3300026: Reed_Down13 1
+    3300028: Reed_Down14
+    3300030: Reed_Down14 1
+    3300032: Reed_Down15
+    3300034: Reed_Down15 1
+    3300036: Reed_Down16
+    3300038: Reed_Down16 1
+    3300040: Reed_Down17
+    3300042: Reed_Down17 1
+    3300044: Reed_Down18
+    3300046: Reed_Down18 1
+    3300048: Reed_Down2
+    3300050: Reed_Down2 1
+    3300052: Reed_Down3
+    3300054: Reed_Down3 1
+    3300056: Reed_Down4
+    3300058: Reed_Down4 1
+    3300060: Reed_Down5
+    3300062: Reed_Down5 1
+    3300064: Reed_Down6
+    3300066: Reed_Down6 1
+    3300068: Reed_Down7
+    3300070: Reed_Down7 1
+    3300072: Reed_Down8
+    3300074: Reed_Down8 1
+    3300076: Reed_Down9
+    3300078: Reed_Down9 1
+    3300080: Reed_Up
+    3300082: Reed_Up 1
+    3300084: Reed_Up1
+    3300086: Reed_Up1 1
+    3300088: Reed_Up10
+    3300090: Reed_Up10 1
+    3300092: Reed_Up11
+    3300094: Reed_Up11 1
+    3300096: Reed_Up12
+    3300098: Reed_Up12 1
+    3300100: Reed_Up13
+    3300102: Reed_Up13 1
+    3300104: Reed_Up14
+    3300106: Reed_Up14 1
+    3300108: Reed_Up15
+    3300110: Reed_Up15 1
+    3300112: Reed_Up16
+    3300114: Reed_Up16 1
+    3300116: Reed_Up17
+    3300118: Reed_Up17 1
+    3300120: Reed_Up18
+    3300122: Reed_Up18 1
+    3300124: Reed_Up19
+    3300126: Reed_Up19 1
+    3300128: Reed_Up2
+    3300130: Reed_Up2 1
+    3300132: Reed_Up20
+    3300134: Reed_Up20 1
+    3300136: Reed_Up21
+    3300138: Reed_Up21 1
+    3300140: Reed_Up22
+    3300142: Reed_Up22 1
+    3300144: Reed_Up23
+    3300146: Reed_Up23 1
+    3300148: Reed_Up3
+    3300150: Reed_Up3 1
+    3300152: Reed_Up4
+    3300154: Reed_Up4 1
+    3300156: Reed_Up5
+    3300158: Reed_Up5 1
+    3300160: Reed_Up6
+    3300162: Reed_Up6 1
+    3300164: Reed_Up7
+    3300166: Reed_Up7 1
+    3300168: Reed_Up8
+    3300170: Reed_Up8 1
+    3300172: Reed_Up9
+    3300174: Reed_Up9 1
+    4300000: Reed_Base
+    4300002: Reed_Up
+    4300004: Reed_Down
+    4300006: Reed_Up1
+    4300008: Reed_Down1
+    4300010: Reed_Down2
+    4300012: Reed_Up2
+    4300014: Reed_Up3
+    4300016: Reed_Down3
+    4300018: Reed_Down4
+    4300020: Reed_Up4
+    4300022: Reed_Down5
+    4300024: Reed_Up5
+    4300026: Reed_Up6
+    4300028: Reed_Up7
+    4300030: Reed_Down6
+    4300032: Reed_Down7
+    4300034: Reed_Up8
+    4300036: Reed_Up9
+    4300038: Reed_Down8
+    4300040: Reed_Up10
+    4300042: Reed_Up11
+    4300044: Reed_Down9
+    4300046: Reed_Down10
+    4300048: Reed_Up12
+    4300050: Reed_Up13
+    4300052: Reed_Down11
+    4300054: Reed_Up14
+    4300056: Reed_Up15
+    4300058: Reed_Up16
+    4300060: Reed_Down12
+    4300062: Reed_Down13
+    4300064: Reed_Up17
+    4300066: Reed_Up18
+    4300068: Reed_Down14
+    4300070: Reed_Down15
+    4300072: Reed_Up19
+    4300074: Reed_Down16
+    4300076: Reed_Up20
+    4300078: Reed_Up21
+    4300080: Reed_Down17
+    4300082: Reed_Up22
+    4300084: Reed_Up23
+    4300086: Reed_Down18
+    4300088: Reed_Base1
+    4300090: Reed_Up
+    4300092: Reed_Down
+    4300094: Reed_Up1
+    4300096: Reed_Down1
+    4300098: Reed_Down2
+    4300100: Reed_Up2
+    4300102: Reed_Up3
+    4300104: Reed_Down3
+    4300106: Reed_Down4
+    4300108: Reed_Up4
+    4300110: Reed_Down5
+    4300112: Reed_Up5
+    4300114: Reed_Up6
+    4300116: Reed_Up7
+    4300118: Reed_Down6
+    4300120: Reed_Down7
+    4300122: Reed_Up8
+    4300124: Reed_Up9
+    4300126: Reed_Down8
+    4300128: Reed_Up10
+    4300130: Reed_Up11
+    4300132: Reed_Down9
+    4300134: Reed_Down10
+    4300136: Reed_Up12
+    4300138: Reed_Up13
+    4300140: Reed_Down11
+    4300142: Reed_Up14
+    4300144: Reed_Up15
+    4300146: Reed_Up16
+    4300148: Reed_Down12
+    4300150: Reed_Down13
+    4300152: Reed_Up17
+    4300154: Reed_Up18
+    4300156: Reed_Down14
+    4300158: Reed_Down15
+    4300160: Reed_Up19
+    4300162: Reed_Down16
+    4300164: Reed_Up20
+    4300166: Reed_Up21
+    4300168: Reed_Down17
+    4300170: Reed_Up22
+    4300172: Reed_Up23
+    4300174: Reed_Down18
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

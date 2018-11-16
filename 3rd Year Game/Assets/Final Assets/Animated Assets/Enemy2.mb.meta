@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: 66e51b53b4d506c4ba58724e3051f409
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chest_CTRL
+    100002: //RootNode
+    100004: Hip_CTRL
+    100006: Hip_Joint
+    100008: Leg1_CTRL
+    100010: Leg1_iK
+    100012: Leg1_Joint_Foot
+    100014: Leg1_Joint_Knee
+    100016: Leg1_Joint_Shin
+    100018: Leg1_Joint_Thigh
+    100020: Leg1_Joint_Top
+    100022: Leg2_CTRL
+    100024: Leg2_iK
+    100026: Leg2_Joint_Foot
+    100028: Leg2_Joint_Knee
+    100030: Leg2_Joint_Shin
+    100032: Leg2_Joint_Thigh
+    100034: Leg2_Joint_Top
+    100036: Leg3_CTRL
+    100038: Leg3_iK
+    100040: Leg3_Joint_Foot
+    100042: Leg3_Joint_Knee
+    100044: Leg3_Joint_Shin
+    100046: Leg3_Joint_Thigh
+    100048: Leg3_Joint_Top
+    100050: Leg4_CTRL
+    100052: Leg4_iK
+    100054: Leg4_Joint_Foot
+    100056: Leg4_Joint_Knee
+    100058: Leg4_Joint_Shin
+    100060: Leg4_Joint_Thigh
+    100062: Leg4_Joint_Top
+    100064: pCylinder1
+    100066: pSphere1
+    100068: pSphere2
+    100070: pSphere3
+    100072: pSphere4
+    100074: pSphere5
+    100076: pSphere6
+    100078: pSphere7
+    100080: pSphere8
+    100082: pSphere9
+    100084: ShortHead_CTRL
+    100086: ShortHead_CTRL1
+    100088: ShortHead_iK
+    100090: ShortHead_Neck_Base
+    100092: ShortHead_Neck_Head
+    100094: ShortHead_Neck_Neck1
+    100096: ShortHead_Neck_Neck2
+    100098: ShortHead_Neck_Tip
+    100100: Shoulder_Joint
+    100102: Spine_iK
+    100104: Spine_Joint
+    100106: SpineCurve
+    100108: TallHead_CTRL
+    100110: TallHead_CTRL1
+    100112: TallHead_iK
+    100114: TallHead_Neck_Base
+    100116: TallHead_Neck_Head
+    100118: TallHead_Neck_Neck1
+    100120: TallHead_Neck_Neck2
+    100122: TallHead_Neck_Neck3
+    100124: TallHead_Neck_Tip
+    400000: Chest_CTRL
+    400002: //RootNode
+    400004: Hip_CTRL
+    400006: Hip_Joint
+    400008: Leg1_CTRL
+    400010: Leg1_iK
+    400012: Leg1_Joint_Foot
+    400014: Leg1_Joint_Knee
+    400016: Leg1_Joint_Shin
+    400018: Leg1_Joint_Thigh
+    400020: Leg1_Joint_Top
+    400022: Leg2_CTRL
+    400024: Leg2_iK
+    400026: Leg2_Joint_Foot
+    400028: Leg2_Joint_Knee
+    400030: Leg2_Joint_Shin
+    400032: Leg2_Joint_Thigh
+    400034: Leg2_Joint_Top
+    400036: Leg3_CTRL
+    400038: Leg3_iK
+    400040: Leg3_Joint_Foot
+    400042: Leg3_Joint_Knee
+    400044: Leg3_Joint_Shin
+    400046: Leg3_Joint_Thigh
+    400048: Leg3_Joint_Top
+    400050: Leg4_CTRL
+    400052: Leg4_iK
+    400054: Leg4_Joint_Foot
+    400056: Leg4_Joint_Knee
+    400058: Leg4_Joint_Shin
+    400060: Leg4_Joint_Thigh
+    400062: Leg4_Joint_Top
+    400064: pCylinder1
+    400066: pSphere1
+    400068: pSphere2
+    400070: pSphere3
+    400072: pSphere4
+    400074: pSphere5
+    400076: pSphere6
+    400078: pSphere7
+    400080: pSphere8
+    400082: pSphere9
+    400084: ShortHead_CTRL
+    400086: ShortHead_CTRL1
+    400088: ShortHead_iK
+    400090: ShortHead_Neck_Base
+    400092: ShortHead_Neck_Head
+    400094: ShortHead_Neck_Neck1
+    400096: ShortHead_Neck_Neck2
+    400098: ShortHead_Neck_Tip
+    400100: Shoulder_Joint
+    400102: Spine_iK
+    400104: Spine_Joint
+    400106: SpineCurve
+    400108: TallHead_CTRL
+    400110: TallHead_CTRL1
+    400112: TallHead_iK
+    400114: TallHead_Neck_Base
+    400116: TallHead_Neck_Head
+    400118: TallHead_Neck_Neck1
+    400120: TallHead_Neck_Neck2
+    400122: TallHead_Neck_Neck3
+    400124: TallHead_Neck_Tip
+    2100000: lambert1
+    4300000: pCylinder1
+    4300002: pSphere1
+    4300004: pSphere2
+    4300006: pSphere3
+    4300008: pSphere4
+    4300010: pSphere5
+    4300012: pSphere6
+    4300014: pSphere7
+    4300016: pSphere8
+    4300018: pSphere9
+    7400000: EnemyWalk
+    7400002: EnemyIdle
+    7400004: EnemyAlerted
+    9500000: //RootNode
+    13700000: pCylinder1
+    13700002: pSphere1
+    13700004: pSphere2
+    13700006: pSphere3
+    13700008: pSphere4
+    13700010: pSphere5
+    13700012: pSphere6
+    13700014: pSphere7
+    13700016: pSphere8
+    13700018: pSphere9
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: EnemyWalk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: EnemyIdle
+      takeName: Take 001
+      firstFrame: 34
+      lastFrame: 370
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: EnemyAlerted
+      takeName: Take 001
+      firstFrame: 372
+      lastFrame: 406
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.05
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.05
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
