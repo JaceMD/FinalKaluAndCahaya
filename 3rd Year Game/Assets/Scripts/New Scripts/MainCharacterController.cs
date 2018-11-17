@@ -51,6 +51,9 @@ public class MainCharacterController : MonoBehaviour
 	private bool nightMode = false;
 
 	private GameObject standingCollider;
+	public GameObject[] pRCObjects = new GameObject[9];
+	private Vector3[] pRCInitPositions = new Vector3[9];
+	private Vector3[] pRCCrawlPositions = new Vector3[9];
 
 	[SerializeField]
 	private bool underTrunk = false;
@@ -66,8 +69,22 @@ public class MainCharacterController : MonoBehaviour
 		crawling = false;
 		standingCollider = GameObject.Find ("StandingCollider");
 		standingCollider.SetActive (true);
+
+		for (int i = 0; i < 9; i++) {
+			pRCInitPositions [i] = pRCObjects[i].transform.localPosition;
+		}
+
+		pRCCrawlPositions [0] = new Vector3 (-0.195f,-0.027f,-1.229f);
+		pRCCrawlPositions [1] = new Vector3 (0.232f,-0.089f,-0.879f);
+		pRCCrawlPositions [2] = new Vector3 (-0.009f,-0.029f,-0.871f);
+		pRCCrawlPositions [3] = new Vector3 (-0.401f,-0.018f,-0.669f);
+		pRCCrawlPositions [4] = new Vector3 (0.508f,-0.026f,-0.578f);
+		pRCCrawlPositions [5] = new Vector3 (0.069f,-0.13f,-0.129f);
+		pRCCrawlPositions [6] = new Vector3 (-0.256f,-0.191f,-0.209f);
+		pRCCrawlPositions [7] = new Vector3 (0.236f,-0.285f,0.15f);
+		pRCCrawlPositions [8] = new Vector3 (0f, 0.12f,-0.366f);
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
@@ -198,6 +215,11 @@ public class MainCharacterController : MonoBehaviour
 				disableJump = true;
 				disableTNR = true;
 				standingCollider.SetActive (false);
+
+				for (int i = 0; i < 9; i++) {
+					pRCObjects[i].transform.localPosition = pRCCrawlPositions[i];
+				}
+
 			} else if(crawling == true && underTrunk == false){
 				charAnim.SetInteger ("State", 9); //Stand
 				crawling = false;
@@ -205,6 +227,11 @@ public class MainCharacterController : MonoBehaviour
 				disableJump = false;
 				disableTNR = false;
 				standingCollider.SetActive (true);
+
+				for (int i = 0; i < 9; i++) {
+					pRCObjects[i].transform.localPosition = pRCInitPositions [i] ;
+				}
+
 			}
 			crawlRequest = false;
 		} 

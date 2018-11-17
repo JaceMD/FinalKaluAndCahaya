@@ -488,24 +488,27 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'From All of Us, Thank You for Playing
+  m_text: 'From All of Us, Thank You for Playing Our Demo
 
 
     Jason Daniels - 1155813
 
-    Concept Art, Skybox Art and Support Character Art Lead.
+    Concept Art and Skybox Art.
+
 
     Janharm Labuschagne - 835738
 
     Sound, Music, 3D Modelling, Texturing and Animation Lead.
 
+
     Dhevan Lau - 1433596
 
-    Project Manager, Programming, Code Integration and Lighting Lead.
+    Project Manager, Programming, Code and Assets Integration, and Lighting Lead.
+
 
     Joshua Neves - 1170886
 
-    Level Design, Asset Implimentaion and Narrative Lead.'
+    Level Design, Asset Implementation and Narrative Lead.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -550,7 +553,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 113
+  m_firstOverflowCharacterIndex: 100
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -573,12 +576,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 600579990}
-    characterCount: 369
+    characterCount: 366
     spriteCount: 0
-    spaceCount: 56
+    spaceCount: 59
     wordCount: 56
     linkCount: 0
-    lineCount: 13
+    lineCount: 15
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0

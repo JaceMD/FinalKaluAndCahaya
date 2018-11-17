@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class StealthManager : MonoBehaviour
 {
-
+	[SerializeField]
 	public bool[] pRCTargetsVisible = new bool[9];
+
+
+
 	public Image detectionUIImage;
 
 	private bool playerInLight;
