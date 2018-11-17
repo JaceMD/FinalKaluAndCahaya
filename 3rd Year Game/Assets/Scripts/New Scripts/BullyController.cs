@@ -6,6 +6,7 @@ public class BullyController : MonoBehaviour {
 
 	public bool canMoveTowardPlayer = false;
 	public float detectionRadius = 6f;
+	public float minDetectionRadius = 2f;
 
 	private float playerDistance;
 	private GameObject player;
@@ -82,6 +83,7 @@ public class BullyController : MonoBehaviour {
 				}
 				player.GetComponent<MainCharacterController> ().DisableControls ();
 				if (nightMode == true) {
+					GameObject.Find ("Support Character").GetComponent<SuppCharController> ().followMode = true;
 					GameObject.Find ("Support Character").GetComponent<SuppCharController> ().DisableControls ();
 				}
 
@@ -126,7 +128,11 @@ public class BullyController : MonoBehaviour {
 	void checkPlayerDistance(){
 		playerDistance = Vector3.Magnitude (playerT.position - transform.position);
 		//Debug.Log ("Player Distance: " + playerDistance);
-		if (playerDistance <= detectionRadius) {
+		if (playerDistance <= minDetectionRadius) {
+			alerted = true;
+			currentAlertTime = -1f;
+		}
+		else if (playerDistance <= detectionRadius) {
 
 
 			//CheckIfPlayerInLight
@@ -157,8 +163,17 @@ public class BullyController : MonoBehaviour {
 		}
 	}
 
+	void OnCollisionEnter(Collision other){
+		if (other.gameObject.tag == "Player") {
+			alerted = true;
+			currentAlertTime = -1f;
+		}
+	}
+
 	void OnDrawGizmosSelected(){
 		Gizmos.color = Color.red;
 		Gizmos.DrawWireSphere (transform.position, detectionRadius);
+		Gizmos.DrawWireSphere (transform.position, minDetectionRadius);
+
 	}
 }

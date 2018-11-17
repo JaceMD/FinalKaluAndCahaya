@@ -53,11 +53,12 @@ public class NightTriggerController : MonoBehaviour {
             if (getTimer <= 0.7)
             {
 				PlayerMovement.EnableControls ();
-                Enemy.SetActive(false);
+                
             }
 			if (ActivateFade.fadeInTimer > 0f )
 			{
 				RenderSettings.skybox = nightSkybox;
+				Enemy.SetActive(false);
 			}
         }
 	}

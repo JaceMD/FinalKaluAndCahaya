@@ -2084,6 +2084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMoveTowardPlayer: 1
   detectionRadius: 10
+  minDetectionRadius: 3
   alertTime: 1
   EnemyDetectionUI: {fileID: 1403341627380688}
   alertMat: {fileID: 2100000, guid: b8103258a2f79a4488f2cef5407c0397, type: 2}

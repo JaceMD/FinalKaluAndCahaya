@@ -128,7 +128,11 @@ public class MainCharacterController : MonoBehaviour
 		Vector3 movement = Vector3.zero;
 		if (xInput == 0f && zInput == 0f) {
 			if (crawling == false) {
-				charAnim.SetInteger ("State", 0);
+				if (playerInLight == false && nightMode == true) {
+					charAnim.SetInteger ("State", 10);
+				} else {
+					charAnim.SetInteger ("State", 0);
+				}
 			} else {
 				charAnim.SetInteger ("State", 8);
 			}
@@ -136,7 +140,7 @@ public class MainCharacterController : MonoBehaviour
 			if (crawling == false) {
 				if (playerInLight == false && nightMode == true) {
 					movement = new Vector3 (xInput, 0f, zInput) * Time.deltaTime * actualSpeed * shadowWalkSpeedFactor;
-					//charAnim.SetInteger ("State", 4);
+					charAnim.SetInteger ("State", 4);
 					//Debug.Log ("player in shadows");
 				} else {
 					movement = new Vector3 (xInput, 0f, zInput) * Time.deltaTime * actualSpeed;
