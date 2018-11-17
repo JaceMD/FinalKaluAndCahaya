@@ -24,7 +24,7 @@ public class RestartLevelController : MonoBehaviour {
             {
                 Player.transform.position = CheckPointLocation;
 				SuppChar.transform.position = CheckPointLocation;
-				MainCamera.transform.position = new Vector3(MainCamera.transform.position.x, CheckPointLocation.y, MainCamera.transform.position.z);
+				MainCamera.transform.position = new Vector3(CheckPointLocation.x, CheckPointLocation.y, MainCamera.transform.position.z);
                 Fallen = false;
             }
         }
