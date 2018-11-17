@@ -293,7 +293,9 @@ public class MainCharacterController : MonoBehaviour
 	public void UnderTrunk(bool b){
 		underTrunk = b;
 	}
-
+	public bool ChecknightMode(){
+		return nightMode;
+	}
 		
 
 

@@ -10,12 +10,14 @@ public class GameManager : MonoBehaviour {
 	public GameObject pausePanel;
 
 	private bool gamePaused = false;
+	public GameObject onScreenPauseText;
 
 	void Start() 
 	{
 		gamePaused = false;
 		controller = InputManager.ActiveDevice;
 		pausePanel.SetActive (false);
+		onScreenPauseText.SetActive (true);
 	}
 
 	void Update()
@@ -25,6 +27,7 @@ public class GameManager : MonoBehaviour {
 				gamePaused = true;
 				//show pause menu and pause game
 				pausePanel.SetActive(true);
+				onScreenPauseText.SetActive (false);
 				Time.timeScale = 0f;
 
 				if (Input.GetKeyDown (KeyCode.Escape) || controller.Action4.WasPressed) {
@@ -39,6 +42,7 @@ public class GameManager : MonoBehaviour {
 				//Unpause game and hide pause menu.
 				gamePaused = false;
 				pausePanel.SetActive (false);
+				onScreenPauseText.SetActive (true);
 				Time.timeScale = 1;
 			}
 		}

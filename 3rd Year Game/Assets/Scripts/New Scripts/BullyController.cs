@@ -33,6 +33,7 @@ public class BullyController : MonoBehaviour {
 
 	private Vector3 initialPos;
 	public Animator charAnim;
+	private bool nightMode = false;
 
 	// Use this for initialization
 	void Start () {
@@ -49,12 +50,16 @@ public class BullyController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		nightMode = player.gameObject.GetComponent<MainCharacterController>().ChecknightMode();
+
 		if (gameOver == true && (Time.time >= startGameOverTime + 2f)) {
 			Debug.Log ("GameoVer");
 			Vector3 checkpointPos = GameObject.Find ("KillCollider").GetComponent<RestartLevelController>().CheckPointLocation;
 			player.transform.position = checkpointPos;
 			player.GetComponent<MainCharacterController> ().EnableControls ();
-			GameObject.Find ("Support Character").GetComponent<SuppCharController> ().EnableControls ();
+			if (nightMode == true) {
+				GameObject.Find ("Support Character").GetComponent<SuppCharController> ().EnableControls ();
+			}
 			gameOver = false;
 			currentAlertTime = alertTime;
 			this.transform.position = initialPos;
@@ -75,8 +80,9 @@ public class BullyController : MonoBehaviour {
 					charAnim.SetInteger ("State", 2);
 				}
 				player.GetComponent<MainCharacterController> ().DisableControls ();
-				GameObject.Find ("Support Character").GetComponent<SuppCharController> ().DisableControls ();
-
+				if (nightMode == true) {
+					GameObject.Find ("Support Character").GetComponent<SuppCharController> ().DisableControls ();
+				}
 
                 ActivateFade.Activate = true;
 			} else {
@@ -131,7 +137,8 @@ public class BullyController : MonoBehaviour {
 			if (Physics.Raycast (visualDetectionRay, out hit, detectionRadius) && ((hit.transform.gameObject.tag == "PRCTarget") || hit.transform.gameObject.tag == "Player")) {
 
 				bool playerInLight = player.gameObject.GetComponent<StealthManager> ().isPlayerInLight ();
-				if (playerInLight == true) {
+
+				if (playerInLight == true || nightMode == false) {
 					alerted = true;
 					Debug.DrawLine (hit.point, hit.point + Vector3.up * 2f, Color.green);
 				} else {

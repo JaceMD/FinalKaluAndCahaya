@@ -3915,7 +3915,7 @@ ParticleSystem:
       type: 0
       properties: 0
   LightsModule:
-    enabled: 1
+    enabled: 0
     ratio: 1
     light: {fileID: 108755228410251264, guid: 72af805cd88c25e4abde3df0d39c7082, type: 2}
     randomDistribution: 1
@@ -3978,7 +3978,7 @@ ParticleSystem:
     intensityCurve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4028,7 +4028,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    maxLights: 6
+    maxLights: 2
   TrailModule:
     enabled: 1
     mode: 0
