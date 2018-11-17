@@ -39,7 +39,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4834433785226702}
   - component: {fileID: 182110697638285270}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: WindZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 4435356640679062}
   - component: {fileID: 33167372839147656}
   - component: {fileID: 23203656774323398}
+  - component: {fileID: 64307818596200892}
   m_Layer: 0
   m_Name: pCone1
   m_TagString: Untagged
@@ -89,7 +90,7 @@ GameObject:
   - component: {fileID: 198408793240829890}
   - component: {fileID: 199589817031768696}
   - component: {fileID: 135977804614784340}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Fireflies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +216,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b08e8437e79806747b1ed198f5b24f35, type: 3}
+  - {fileID: 2100000, guid: e29d91949c298c24697974f3b6dfd04b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -249,6 +250,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1051940063633790}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64307818596200892
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809077815074410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: b08e8437e79806747b1ed198f5b24f35, type: 3}
 --- !u!65 &65632309752421814
 BoxCollider:
   m_ObjectHideFlags: 1

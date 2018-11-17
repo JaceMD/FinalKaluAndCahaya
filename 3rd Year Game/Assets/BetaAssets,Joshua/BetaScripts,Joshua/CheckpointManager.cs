@@ -7,6 +7,8 @@ public class CheckpointManager : MonoBehaviour {
     public RestartLevelController LevelController;
 	public GameObject Fireflies;
 	private GameObject player;
+	private float playerDist;
+	private bool checkPointEnabled = false;
 
 	// Use this for initialization
 	void Start () {
@@ -16,13 +18,19 @@ public class CheckpointManager : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject == LevelController.Player)
-        LevelController.CheckPointLocation = this.transform.position;
+		if (other.gameObject == LevelController.Player) {
+			LevelController.CheckPointLocation = this.transform.position;
+			Fireflies.SetActive (true);
+			checkPointEnabled = true;
+		}
     }
 
     // Update is called once per frame
     void Update () {
-		if (Vector3.Magnitude (this.gameObject.transform.position - player.transform.position) <= 12f) {
+
+		playerDist = (Vector3.Magnitude (this.gameObject.transform.position - player.transform.position));
+
+			if (playerDist <= 12f && checkPointEnabled == true) {
 			Fireflies.SetActive (true);
 		} else {
 			Fireflies.SetActive (false);
