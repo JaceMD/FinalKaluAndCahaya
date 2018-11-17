@@ -18,6 +18,7 @@ public class BullyController : MonoBehaviour {
 	private float currentAlertTime;
 
 	public GameObject EnemyDetectionUI;
+	public Material alertMat, spottedMat;
 	private StealthManager playerSM; 
 
 	private Vector3 initialRotDirection;
@@ -73,7 +74,7 @@ public class BullyController : MonoBehaviour {
 			if (currentAlertTime <= 0f) {
 				gameOver = true;
 				startGameOverTime = Time.time;
-				EnemyDetectionUI.gameObject.GetComponent<SpriteRenderer> ().color = Color.red;
+				EnemyDetectionUI.gameObject.GetComponent<MeshRenderer> ().material = spottedMat;
 
 				if(canMoveTowardPlayer == true){
 					moveTowardPlayer();
@@ -86,7 +87,7 @@ public class BullyController : MonoBehaviour {
 
                 ActivateFade.Activate = true;
 			} else {
-				EnemyDetectionUI.gameObject.GetComponent<SpriteRenderer> ().color = Color.yellow;
+				EnemyDetectionUI.gameObject.GetComponent<MeshRenderer> ().material = alertMat;
 			}
 
 		} 

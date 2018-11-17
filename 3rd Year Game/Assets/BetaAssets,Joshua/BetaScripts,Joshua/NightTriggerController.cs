@@ -14,7 +14,7 @@ public class NightTriggerController : MonoBehaviour {
     public MainCharacterController PlayerMovement;
     public float getMoveSpeed;
     public MoveEnemyController MoveEnemy;
-    public Vector3 ThicketEndPos = new Vector3(208.5f, 0.8f, 3.4f);
+	public Vector3 ThicketEndPos = new Vector3(207.66f, 0.8f, 3.28f);
 	public FadeEffectController ActivateFade;
 
 	public Material daySkybox, nightSkybox;
@@ -49,7 +49,7 @@ public class NightTriggerController : MonoBehaviour {
             LightSource.intensity -= 0.2f * Time.deltaTime * 3;
             IndirectLight.intensity -= 0.2f * Time.deltaTime * 3;
             getTimer -= 0.1f * Time.deltaTime;
-            Tree.transform.position = Vector3.MoveTowards(Tree.transform.position, ThicketEndPos, 2 * Time.deltaTime);
+            Tree.transform.position = Vector3.MoveTowards(Tree.transform.position, ThicketEndPos, Time.deltaTime);
             if (getTimer <= 0.7)
             {
 				PlayerMovement.EnableControls ();
