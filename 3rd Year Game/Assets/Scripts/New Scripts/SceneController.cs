@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using InControl;
+using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour {
 
@@ -10,6 +10,16 @@ public class SceneController : MonoBehaviour {
 
 	void Start(){
 		controller = InputManager.ActiveDevice;
+		Cursor.visible = false;
+	}
+
+	// Update is called once per frame
+	void Update () {
+		Scene thisScene = SceneManager.GetActiveScene ();
+		if ((controller.Action4.WasPressed == true || Input.GetKeyDown(KeyCode.Escape)) && thisScene.name == "CreditsScene"){
+			Debug.Log ("Triangle pressed");
+			onClickMainMenu ();
+		}
 	}
 
 	public void onClickMainMenu(){
@@ -20,20 +30,14 @@ public class SceneController : MonoBehaviour {
 		SceneManager.LoadScene ("Final Demo Scene");
 	}
 
-	public void onClickControlsScene(){
-		SceneManager.LoadScene ("Controls Scene");
+	public void onClickCreditsScene(){
+		SceneManager.LoadScene ("CreditsScene");
 	}
 
 	public void onClickQuitGame(){
 		Application.Quit ();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-
-	}
-
-
 
 	public void RestartLevel(){
 		Scene thisScene = SceneManager.GetActiveScene ();
