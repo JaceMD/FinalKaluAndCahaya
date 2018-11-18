@@ -9,6 +9,9 @@ public class CheckpointManager : MonoBehaviour {
 	private GameObject player;
 	private float playerDist;
 	private bool checkPointEnabled = false;
+	private bool visited = false;
+
+	public int tutorialNum;
 
 	// Use this for initialization
 	void Start () {
@@ -19,9 +22,15 @@ public class CheckpointManager : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
 		if (other.gameObject == LevelController.Player) {
+
+
 			LevelController.CheckPointLocation = this.transform.position;
 			Fireflies.SetActive (true);
 			checkPointEnabled = true;
+			if (visited == false) {
+				GameObject.Find ("Game Manager").GetComponent<TutorialController> ().changeTutNum (tutorialNum);
+				visited = true;
+			}
 		}
     }
 
@@ -36,4 +45,6 @@ public class CheckpointManager : MonoBehaviour {
 			Fireflies.SetActive (false);
 		}
 	}
+
+
 }
