@@ -23,7 +23,7 @@ public class RestartLevelController : MonoBehaviour {
 			if (ActivateFade.fadeInTimer > 0f )
             {
                 Player.transform.position = CheckPointLocation;
-				SuppChar.transform.position = new Vector3(CheckPointLocation.x, CheckPointLocation.y + 10f, CheckPointLocation.z);;
+				SuppChar.transform.position = new Vector3(CheckPointLocation.x, CheckPointLocation.y + 10f, CheckPointLocation.z);
 				MainCamera.transform.position = new Vector3(CheckPointLocation.x, CheckPointLocation.y, MainCamera.transform.position.z);
                 Fallen = false;
             }

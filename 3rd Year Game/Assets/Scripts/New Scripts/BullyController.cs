@@ -58,9 +58,12 @@ public class BullyController : MonoBehaviour {
 			Debug.Log ("GameoVer");
 			Vector3 checkpointPos = GameObject.Find ("KillCollider").GetComponent<RestartLevelController>().CheckPointLocation;
 			player.transform.position = checkpointPos;
+
 			player.GetComponent<MainCharacterController> ().EnableControls ();
 			if (nightMode == true) {
+				GameObject.Find ("Support Character").transform.position = new Vector3(checkpointPos.x, checkpointPos.y + 10f, checkpointPos.z);
 				GameObject.Find ("Support Character").GetComponent<SuppCharController> ().EnableControls ();
+				GameObject.Find ("Oversee").GetComponent<OverseeController> ().ResetOverseePos ();
 			}
 			gameOver = false;
 			currentAlertTime = alertTime;
