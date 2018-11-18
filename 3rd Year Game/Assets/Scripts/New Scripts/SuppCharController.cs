@@ -33,7 +33,7 @@ public class SuppCharController : MonoBehaviour {
 			if (controller.RightStickButton.WasPressed) {
 				if (followMode == true) {
 					followMode = false;
-					GameObject.Find ("Oversee").GetComponent<OverseeController> ().ResetOverseePos ();
+					//GameObject.Find ("Oversee").GetComponent<OverseeController> ().ResetOverseePos ();
 				} else if (followMode == false) {
 					followMode = true;
 				}

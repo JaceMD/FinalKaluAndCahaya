@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour {
 		controller = InputManager.ActiveDevice;
 		pausePanel.SetActive (false);
 		onScreenPauseText.SetActive (true);
+		Cursor.visible = false;
 	}
 
 	void Update()
@@ -30,14 +31,6 @@ public class GameManager : MonoBehaviour {
 				onScreenPauseText.SetActive (false);
 				Time.timeScale = 0f;
 
-				if (Input.GetKeyDown (KeyCode.Escape) || controller.Action4.WasPressed) {
-					if (SceneManager.GetActiveScene ().name == "Final Demo Scene" || SceneManager.GetActiveScene ().name == "Controls Scene") {
-						SceneManager.LoadScene ("Main Menu Scene");
-					} else {
-						Application.Quit ();
-					}
-				}
-
 			} else {
 				//Unpause game and hide pause menu.
 				gamePaused = false;
@@ -46,6 +39,17 @@ public class GameManager : MonoBehaviour {
 				Time.timeScale = 1;
 			}
 		}
+
+		if (gamePaused == true && (Input.GetKeyDown (KeyCode.Escape) || controller.Action4.WasPressed)) {
+			Time.timeScale = 1;
+			if (SceneManager.GetActiveScene ().name == "Final Demo Scene" || SceneManager.GetActiveScene ().name == "Controls Scene") {
+				SceneManager.LoadScene ("Main Menu Scene");
+			} else {
+				//Application.Quit ();
+			}
+		}
+
+
 
 
 	}
