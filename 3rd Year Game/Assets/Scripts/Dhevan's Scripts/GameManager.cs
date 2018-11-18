@@ -4,6 +4,7 @@ using UnityEngine;
 using InControl;
 using UnityEngine.SceneManagement;
 
+
 public class GameManager : MonoBehaviour {
 
 	private InputDevice controller;
@@ -54,11 +55,5 @@ public class GameManager : MonoBehaviour {
 
 	}
 
-	void pauseGame(){
 
-	}
-
-	void unpauseGame(){
-
-	}
 }

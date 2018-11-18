@@ -327,6 +327,18 @@ public class MainCharacterController : MonoBehaviour
 	public bool ChecknightMode(){
 		return nightMode;
 	}
+	public void resetCrawling(){
+		charAnim.SetInteger ("State", 9); //Stand
+		crawling = false;
+		startCrawlingSquishTime = Time.time;
+		disableJump = false;
+		disableTNR = false;
+		standingCollider.SetActive (true);
+
+		for (int i = 0; i < 9; i++) {
+			pRCObjects[i].transform.localPosition = pRCInitPositions [i] ;
+		}
+	}
 		
 
 

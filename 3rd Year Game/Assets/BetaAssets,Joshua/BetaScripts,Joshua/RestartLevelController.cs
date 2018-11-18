@@ -23,6 +23,8 @@ public class RestartLevelController : MonoBehaviour {
 			if (ActivateFade.fadeInTimer > 0f )
             {
                 Player.transform.position = CheckPointLocation;
+				Player.GetComponent<MainCharacterController>().resetCrawling();
+
 				SuppChar.transform.position = new Vector3(CheckPointLocation.x, CheckPointLocation.y + 10f, CheckPointLocation.z);
 				MainCamera.transform.position = new Vector3(CheckPointLocation.x, CheckPointLocation.y, MainCamera.transform.position.z);
                 Fallen = false;
