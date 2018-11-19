@@ -4,20 +4,24 @@ using UnityEngine;
 using InControl;
 using UnityEngine.SceneManagement;
 
+
 public class SceneController : MonoBehaviour {
 
 	private InputDevice controller;
+	private  AudioSource source;
+	public AudioClip backSFX;
 
 	void Start(){
 		
 		Cursor.visible = false;
+		source = this.gameObject.GetComponent<AudioSource> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
 		controller = InputManager.ActiveDevice;
 
-		if ((controller.Action4.WasPressed == true || Input.GetKeyDown(KeyCode.Escape))){
+		if ((controller.Action2.WasPressed == true || Input.GetKeyDown(KeyCode.Escape))){
 			Scene thisScene = SceneManager.GetActiveScene ();
 			if (thisScene.name == "CreditsScene") {
 				Debug.Log ("Triangle pressed");
@@ -27,6 +31,7 @@ public class SceneController : MonoBehaviour {
 	}
 
 	public void onClickMainMenu(){
+		source.PlayOneShot (backSFX, 0.7f);
 		SceneManager.LoadScene ("Main Menu Scene");
 	}
 

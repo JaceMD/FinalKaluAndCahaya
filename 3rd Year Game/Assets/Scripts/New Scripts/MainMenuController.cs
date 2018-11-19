@@ -17,25 +17,49 @@ public class MainMenuController : MonoBehaviour {
 	private AudioSource source;
 	public AudioClip scrollSFX, selectSFX;
 
+	private bool selectedOption = false;
+	private float startSelectionTime;
+
 	// Use this for initialization
 	void Start () {
 		buttonCounter = 1;
 		source = this.gameObject.GetComponent<AudioSource> ();
 		Cursor.visible = false;
+		selectedOption = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		controller = InputManager.ActiveDevice;
-		if (controller.DPadUp.WasPressed) {
-			buttonCounter--;
-			if (buttonCounter < 1) {
-				buttonCounter = 1;
+		if (selectedOption == true && Time.time >= startSelectionTime + 0.3f) {
+			switch(buttonCounter){
+			case 1:
+				this.gameObject.GetComponent<SceneController> ().onClickDemoScene ();
+				break;
+			case 2:
+				this.gameObject.GetComponent<SceneController> ().onClickCreditsScene ();
+				break;
+			case 3:
+				this.gameObject.GetComponent<SceneController> ().onClickQuitGame ();
+				break;
+			default:
+				break;
+
 			}
-		} else if(controller.DPadDown.WasPressed){
-			buttonCounter++;
-			if (buttonCounter > 3) {
-				buttonCounter = 3;
+		}else {
+			if (controller.DPadUp.WasPressed) {
+				buttonCounter--;
+				source.PlayOneShot (scrollSFX, 0.7f);
+				if (buttonCounter < 1) {
+					buttonCounter = 1;
+				}
+			} else if(controller.DPadDown.WasPressed){
+				buttonCounter++;
+				source.PlayOneShot (scrollSFX, 0.7f);
+				if (buttonCounter > 3) {
+					buttonCounter = 3;
+				}
+
 			}
 		}
 
@@ -68,25 +92,13 @@ public class MainMenuController : MonoBehaviour {
 			creditsMenuUI.GetComponent<Image> ().color = Color.white;
 			break;
 		default:
-
 			break;
 		}
 
 		if (controller.Action1.WasPressed) {
-			switch(buttonCounter){
-			case 1:
-				this.gameObject.GetComponent<SceneController> ().onClickDemoScene ();
-				break;
-			case 2:
-				this.gameObject.GetComponent<SceneController> ().onClickCreditsScene ();
-				break;
-			case 3:
-				this.gameObject.GetComponent<SceneController> ().onClickQuitGame ();
-				break;
-			default:
-				break;
-
-			}
+			source.PlayOneShot (selectSFX, 1f);
+			selectedOption = true;
+			startSelectionTime = Time.time;
 		}
 
 	}
