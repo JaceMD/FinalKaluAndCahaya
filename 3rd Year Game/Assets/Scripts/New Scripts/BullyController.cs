@@ -37,9 +37,13 @@ public class BullyController : MonoBehaviour {
 	private Vector3 initialPos;
 	public Animator charAnim;
 	private bool nightMode = false;
+	private AudioSource source;
+	public AudioClip alertGrowlSFX, spottedGrowlSFX;
+	private bool canAlertGrowl = true;
 
 	// Use this for initialization
 	void Start () {
+		source = this.gameObject.GetComponent<AudioSource> ();
 		player = GameObject.Find ("Player");
 		playerT = player.transform;
 		playerSM = player.GetComponent<StealthManager> ();
@@ -59,6 +63,7 @@ public class BullyController : MonoBehaviour {
 		nightMode = player.gameObject.GetComponent<MainCharacterController>().ChecknightMode();
 
 		if (gameOver == true && (Time.time >= startGameOverTime + 2f)) {
+			canAlertGrowl = true;
 			Debug.Log ("GameoVer");
 			Vector3 checkpointPos = GameObject.Find ("KillCollider").GetComponent<RestartLevelController> ().CheckPointLocation;
 			player.transform.position = checkpointPos;
@@ -82,12 +87,19 @@ public class BullyController : MonoBehaviour {
 
 			}
 		}
+		if (alerted == true && canAlertGrowl == true) {
+			canAlertGrowl = false;
+			source.PlayOneShot (alertGrowlSFX, 1f);
+		}
+
 		if (alerted == true && gameOver == false) {
+			
 			charAnim.SetInteger ("State", 1);
 			currentAlertTime -= Time.deltaTime;
 			EnemyDetectionUI.gameObject.SetActive (true);
 			rotateTowardPlayer ();
 			if (currentAlertTime <= 0f) {
+				source.PlayOneShot (spottedGrowlSFX, 0.6f);
 				gameOver = true;
 				startGameOverTime = Time.time;
 				EnemyDetectionUI.gameObject.GetComponent<MeshRenderer> ().material = spottedMat;
@@ -156,7 +168,6 @@ public class BullyController : MonoBehaviour {
 		}
 		else if (playerDistance <= detectionRadius) {
 
-
 			//CheckIfPlayerInLight
 			RaycastHit hit;
 
@@ -172,16 +183,19 @@ public class BullyController : MonoBehaviour {
 					Debug.DrawLine (hit.point, hit.point + Vector3.up * 2f, Color.green);
 				} else {
 					alerted = false;
+					canAlertGrowl = true;
 				}
 
 			} else {
 				alerted = false;
+				canAlertGrowl = true;
 			}
 
 			//If Player Is In Light - Get Alerted - After alertTime seconds chase player and game over
 			//else continue surveying area.
 		} else {
 			alerted = false;
+			canAlertGrowl = true;
 		}
 	}
 

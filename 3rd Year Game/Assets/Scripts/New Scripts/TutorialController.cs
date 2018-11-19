@@ -20,11 +20,12 @@ public class TutorialController : MonoBehaviour {
 	public GameObject tutIconObj;
 	public Image tutIcon;
 	public Sprite RightStick, eye; 
+	public AudioSource source;
+	public AudioClip hintSFX, tutBoxSFX;
 	
 
 	// Use this for initialization
 	void Start () {
-		
 		tutorialPanel.SetActive (true);
 		tutPanelActive = true;
 		openTutBoxText.SetActive (false);
@@ -35,6 +36,7 @@ public class TutorialController : MonoBehaviour {
 		controller = InputManager.ActiveDevice;
 		if (tutPanelActive == true) {
 			if (controller.Action1.WasPressed == true) {
+				source.PlayOneShot (tutBoxSFX, 0.7f);
 				tutorialPanel.SetActive (false);
 				tutPanelActive = false;
 				openTutBoxText.SetActive (true);
@@ -43,6 +45,7 @@ public class TutorialController : MonoBehaviour {
 			TutScenario ();
 		} else if(tutPanelActive == false) {
 			if (controller.Action1.WasPressed == true) {
+				source.PlayOneShot (tutBoxSFX, 0.7f);
 				tutorialPanel.SetActive (true);
 				tutPanelActive = true;
 				openTutBoxText.SetActive (false);
@@ -52,6 +55,7 @@ public class TutorialController : MonoBehaviour {
 	}
 
 	public void changeTutNum(int num){
+		source.PlayOneShot (hintSFX, 0.4f);
 		tutorialNumTracker = num;
 		tutPanelActive = true;
 		tutorialPanel.SetActive (true);
