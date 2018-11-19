@@ -9,7 +9,22 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: PM3D_enemy_OBJ
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PM3D_enemy_OBJ
+    second: {fileID: 2100000, guid: 78bec9b33b076c1488eafaea61bb1df4, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PM3D_enemy_OBJ_NM
+    second: {fileID: 2800000, guid: b44d794a8e48d93439b37b0401d9db75, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PM3D_enemy_OBJ_TXTR
+    second: {fileID: 2800000, guid: 766b59493a9f7ad46a54b22cc73f2575, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -63,8 +78,8 @@ ModelImporter:
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 180
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
