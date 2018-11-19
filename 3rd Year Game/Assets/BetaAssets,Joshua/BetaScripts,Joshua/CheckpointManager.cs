@@ -39,7 +39,7 @@ public class CheckpointManager : MonoBehaviour {
 
 		playerDist = (Vector3.Magnitude (this.gameObject.transform.position - player.transform.position));
 
-			if (playerDist <= 16f && checkPointEnabled == true) {
+		if (playerDist <= 20f && checkPointEnabled == true) {
 			Fireflies.SetActive (true);
 		} else {
 			Fireflies.SetActive (false);

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PostProcessing;
 
 public class NightTriggerController : MonoBehaviour {
 
@@ -19,11 +20,16 @@ public class NightTriggerController : MonoBehaviour {
 
 	public Material daySkybox, nightSkybox;
 
+	public PostProcessingBehaviour PPCameraFilter;
+	public PostProcessingProfile daytimeCC, nightTimeCC;
+
+
 	// Use this for initialization
 	void Start () {
         SupportCharacter.SetActive(false);
         Tree.SetActive(false);
 		RenderSettings.skybox = daySkybox;
+		PPCameraFilter.profile = daytimeCC;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -58,6 +64,7 @@ public class NightTriggerController : MonoBehaviour {
 			if (ActivateFade.fadeInTimer > 0f )
 			{
 				RenderSettings.skybox = nightSkybox;
+				PPCameraFilter.profile = nightTimeCC;
 				Enemy.SetActive(false);
 			}
         }
