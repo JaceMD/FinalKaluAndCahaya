@@ -18,6 +18,8 @@ public class SuppCharController : MonoBehaviour {
 	public GameObject[] pRCTargets = new GameObject[9];
 
 	private bool controlsDisabled = false;
+	public float rotationSpeed = 3f;
+	public Animator charAnim;
 
 
 
@@ -29,6 +31,8 @@ public class SuppCharController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		rotateTowardPlayer ();
+
 		controller = InputManager.ActiveDevice;
 		if (controlsDisabled == false) {
 			if (controller.RightStickButton.WasPressed) {
@@ -43,12 +47,20 @@ public class SuppCharController : MonoBehaviour {
 
 			if (followMode == true) {
 				checkFollowDistance ();
+				charAnim.SetInteger ("State", 0);
 			} else {
 				Vector3 newPosition = new Vector3 (overseePos.position.x, overseePos.position.y, overseePos.position.z);
 				this.transform.position = Vector3.Slerp (transform.position, newPosition, 6 * Time.deltaTime);
+				charAnim.SetInteger ("State", 1);
 			}
 		}
 
+	}
+
+	void rotateTowardPlayer(){
+		Vector3 playerDir = playerT.position - this.transform.position;
+		playerDir.y = 0f;
+		transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (playerDir), Time.deltaTime * rotationSpeed);
 	}
 
 	void FixedUpdate(){
