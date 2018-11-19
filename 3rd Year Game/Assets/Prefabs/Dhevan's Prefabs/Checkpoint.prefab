@@ -131,7 +131,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1051940063633790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15, y: 2, z: -3.3}
+  m_LocalPosition: {x: 69.39, y: 2, z: -3.46}
   m_LocalScale: {x: 1, y: 3, z: 3.3}
   m_Children:
   - {fileID: 4452769332271398}
@@ -216,7 +216,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: e29d91949c298c24697974f3b6dfd04b, type: 2}
+  - {fileID: 2100000, guid: 0d84aea15a9215442a9c4a29ffe17956, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelController: {fileID: 0}
   Fireflies: {fileID: 1978079371053482}
-  tutorialNum: 0
+  tutorialNum: 3
 --- !u!135 &135977804614784340
 SphereCollider:
   m_ObjectHideFlags: 1
