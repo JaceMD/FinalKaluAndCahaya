@@ -26,6 +26,8 @@ public class RestartLevelController : MonoBehaviour {
 				Player.GetComponent<MainCharacterController>().resetCrawling();
 
 				SuppChar.transform.position = new Vector3(CheckPointLocation.x, CheckPointLocation.y + 10f, CheckPointLocation.z);
+				GameObject.Find ("Support Character").GetComponent<SuppCharController> ().EnableControls ();
+				GameObject.Find ("Oversee").GetComponent<OverseeController> ().ResetOverseePos ();
 				MainCamera.transform.position = new Vector3(CheckPointLocation.x, CheckPointLocation.y, MainCamera.transform.position.z);
                 Fallen = false;
             }
@@ -36,6 +38,8 @@ public class RestartLevelController : MonoBehaviour {
 		if (other.gameObject.tag == "Player") {
             ActivateFade.Activate = true;
             Fallen = true;
+			GameObject.Find ("Support Character").GetComponent<SuppCharController> ().DisableControls ();
+
 		}
 	}
 }

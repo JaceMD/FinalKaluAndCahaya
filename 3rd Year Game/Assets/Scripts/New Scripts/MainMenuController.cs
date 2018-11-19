@@ -18,12 +18,13 @@ public class MainMenuController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		buttonCounter = 1;
-		controller = InputManager.ActiveDevice;
+
 		Cursor.visible = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		controller = InputManager.ActiveDevice;
 		if (controller.DPadUp.WasPressed) {
 			buttonCounter--;
 			if (buttonCounter < 1) {

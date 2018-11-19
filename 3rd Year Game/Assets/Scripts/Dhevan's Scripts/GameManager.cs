@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
 	void Start() 
 	{
 		gamePaused = false;
-		controller = InputManager.ActiveDevice;
+
 		pausePanel.SetActive (false);
 		onScreenPauseText.SetActive (true);
 		Cursor.visible = false;
@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour {
 
 	void Update()
 	{
+		controller = InputManager.ActiveDevice;
 		if (controller.Action2.WasPressed) {
 			if (gamePaused == false) {
 				gamePaused = true;

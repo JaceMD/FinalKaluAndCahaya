@@ -25,7 +25,7 @@ public class OverseeController : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		controller = InputManager.ActiveDevice;
+		
 		overseeParentT = this.transform;
 		overseeParentT.position = player.transform.position;
 
@@ -34,6 +34,7 @@ public class OverseeController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		controller = InputManager.ActiveDevice;
 		checkLightMode ();
 		updateOverseePos ();
 	}

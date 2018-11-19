@@ -24,7 +24,7 @@ public class TutorialController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		controller = InputManager.ActiveDevice;
+		
 		tutorialPanel.SetActive (true);
 		tutPanelActive = true;
 		openTutBoxText.SetActive (false);
@@ -32,6 +32,7 @@ public class TutorialController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		controller = InputManager.ActiveDevice;
 		if (tutPanelActive == true) {
 			if (controller.Action1.WasPressed == true) {
 				tutorialPanel.SetActive (false);

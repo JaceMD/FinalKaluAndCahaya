@@ -88,6 +88,7 @@ public class MainCharacterController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		controller = InputManager.ActiveDevice;
 		if (controlsDisabled == false) {
 			checkOnGround ();
 			checkJumpRequest ();

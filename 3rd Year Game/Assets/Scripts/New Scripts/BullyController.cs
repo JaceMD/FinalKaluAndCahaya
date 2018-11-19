@@ -19,6 +19,7 @@ public class BullyController : MonoBehaviour {
 	private float currentAlertTime;
 
 	public GameObject EnemyDetectionUI;
+	public GameObject[] eyeObjs = new GameObject[9];
 	public Material alertMat, spottedMat;
 	private StealthManager playerSM; 
 
@@ -48,6 +49,9 @@ public class BullyController : MonoBehaviour {
 		initialRotDirection = transform.rotation.eulerAngles;
 		initialPos = this.transform.position;
 		charAnim.SetInteger ("State", 0);
+		for (int i = 0; i < 9;i++){
+			eyeObjs [i].GetComponent<SkinnedMeshRenderer> ().material = alertMat;
+		}
 	}
 	
 	// Update is called once per frame
@@ -56,12 +60,12 @@ public class BullyController : MonoBehaviour {
 
 		if (gameOver == true && (Time.time >= startGameOverTime + 2f)) {
 			Debug.Log ("GameoVer");
-			Vector3 checkpointPos = GameObject.Find ("KillCollider").GetComponent<RestartLevelController>().CheckPointLocation;
+			Vector3 checkpointPos = GameObject.Find ("KillCollider").GetComponent<RestartLevelController> ().CheckPointLocation;
 			player.transform.position = checkpointPos;
 
 			player.GetComponent<MainCharacterController> ().EnableControls ();
 			if (nightMode == true) {
-				GameObject.Find ("Support Character").transform.position = new Vector3(checkpointPos.x, checkpointPos.y + 10f, checkpointPos.z);
+				GameObject.Find ("Support Character").transform.position = new Vector3 (checkpointPos.x, checkpointPos.y + 10f, checkpointPos.z);
 				GameObject.Find ("Support Character").GetComponent<SuppCharController> ().EnableControls ();
 				GameObject.Find ("Oversee").GetComponent<OverseeController> ().ResetOverseePos ();
 			}
@@ -69,6 +73,11 @@ public class BullyController : MonoBehaviour {
 			currentAlertTime = alertTime;
 			this.transform.position = initialPos;
 			charAnim.SetInteger ("State", 0);
+		} else if(gameOver == true) {
+			if(canMoveTowardPlayer == true){
+				moveTowardPlayer();
+
+			}
 		}
 		if (alerted == true && gameOver == false) {
 			charAnim.SetInteger ("State", 1);
@@ -79,11 +88,10 @@ public class BullyController : MonoBehaviour {
 				gameOver = true;
 				startGameOverTime = Time.time;
 				EnemyDetectionUI.gameObject.GetComponent<MeshRenderer> ().material = spottedMat;
-
-				if(canMoveTowardPlayer == true){
-					moveTowardPlayer();
-					charAnim.SetInteger ("State", 2);
+				for (int i = 0; i < 9;i++){
+					eyeObjs [i].GetComponent<SkinnedMeshRenderer> ().material = spottedMat;
 				}
+
 				player.GetComponent<MainCharacterController> ().DisableControls ();
 				if (nightMode == true) {
 					GameObject.Find ("Support Character").GetComponent<SuppCharController> ().followMode = true;
@@ -93,6 +101,9 @@ public class BullyController : MonoBehaviour {
                 ActivateFade.Activate = true;
 			} else {
 				EnemyDetectionUI.gameObject.GetComponent<MeshRenderer> ().material = alertMat;
+				for (int i = 0; i < 9;i++){
+					eyeObjs [i].GetComponent<SkinnedMeshRenderer> ().material = alertMat;
+				}
 			}
 
 		} 
@@ -123,8 +134,13 @@ public class BullyController : MonoBehaviour {
 		transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (dir), Time.deltaTime * rotationSpeed);
 	}
 	void moveTowardPlayer(){
-		if (playerDistance >= 2f) {
+		Debug.Log ("moving towards player");
+		playerDistance = Vector3.Magnitude (playerT.position - transform.position);
+		if (playerDistance >= 3f) {
+			charAnim.SetInteger ("State", 2);
 			transform.position = Vector3.MoveTowards (transform.position, playerT.position, moveTowardPlayerSpeed * Time.deltaTime);
+		} else {
+			charAnim.SetInteger ("State", 1);
 		}
 	}
 

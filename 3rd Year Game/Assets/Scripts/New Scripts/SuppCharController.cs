@@ -23,12 +23,13 @@ public class SuppCharController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		controller = InputManager.ActiveDevice;
+		
 		followMode = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		controller = InputManager.ActiveDevice;
 		if (controlsDisabled == false) {
 			if (controller.RightStickButton.WasPressed) {
 				if (followMode == true) {
@@ -88,8 +89,11 @@ public class SuppCharController : MonoBehaviour {
 
 	public void DisableControls(){
 		controlsDisabled = true;
+		GameObject.Find("SuppObj").GetComponent<TrailRenderer> ().enabled = false;
+		followMode = true;
 	}
 	public void EnableControls(){
 		controlsDisabled = false;
+		GameObject.Find("SuppObj").GetComponent<TrailRenderer> ().enabled = true;
 	}
 }
