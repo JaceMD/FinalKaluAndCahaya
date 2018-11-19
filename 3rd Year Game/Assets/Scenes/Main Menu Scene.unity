@@ -3661,6 +3661,8 @@ MonoBehaviour:
   playMenuUI: {fileID: 740522784}
   creditsMenuUI: {fileID: 82770437}
   quitMenuUI: {fileID: 714562371}
+  scrollSFX: {fileID: 8300000, guid: ea132895f7a09874187f22f0c9fc6d3c, type: 3}
+  selectSFX: {fileID: 8300000, guid: 97b2dc272e725c54c963cdc8449dfad7, type: 3}
 --- !u!1 &1200387291
 GameObject:
   m_ObjectHideFlags: 0
