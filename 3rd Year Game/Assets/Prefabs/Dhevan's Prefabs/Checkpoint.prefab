@@ -289,6 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelController: {fileID: 0}
   Fireflies: {fileID: 1978079371053482}
+  tutorialNum: 0
 --- !u!135 &135977804614784340
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -3930,7 +3931,7 @@ ParticleSystem:
       type: 0
       properties: 0
   LightsModule:
-    enabled: 0
+    enabled: 1
     ratio: 1
     light: {fileID: 108755228410251264, guid: 72af805cd88c25e4abde3df0d39c7082, type: 2}
     randomDistribution: 1
@@ -3940,7 +3941,7 @@ ParticleSystem:
     rangeCurve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
