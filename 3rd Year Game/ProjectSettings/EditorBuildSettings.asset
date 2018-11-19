@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Beta Demo Scene.unity
     guid: 9f3cdce01966cde43b6efee2093d2440
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Controls Scene.unity
     guid: b2aa28ccb1853734e9b73af35b6afafe
   - enabled: 1
