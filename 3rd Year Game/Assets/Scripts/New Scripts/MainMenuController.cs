@@ -14,11 +14,13 @@ public class MainMenuController : MonoBehaviour {
 
 	public GameObject playMenuUI, creditsMenuUI, quitMenuUI;
 	private InputDevice controller;
+	private AudioSource source;
+	public AudioClip scrollSFX, selectSFX;
 
 	// Use this for initialization
 	void Start () {
 		buttonCounter = 1;
-
+		source = this.gameObject.GetComponent<AudioSource> ();
 		Cursor.visible = false;
 	}
 	

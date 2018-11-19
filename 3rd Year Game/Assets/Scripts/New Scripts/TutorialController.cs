@@ -68,7 +68,7 @@ public class TutorialController : MonoBehaviour {
 
 			break;
 		case 2:
-			tutDescription.text = "these <color=\"purple\">big totems <color=\"white\">are <color=\"purple\">checkpoints<color=\"white\">.\nif Kalu <color=\"red\">feints or falls off the map <color=\"white\">.he'll <color=\"red\">respawn<color=\"white\"> at the last totem visited.";
+			tutDescription.text = "these <color=\"purple\">big totems <color=\"white\">are <color=\"purple\">checkpoints<color=\"white\">.\nif Kalu <color=\"red\">feints or falls off the map <color=\"white\">.he'll <color=\"red\">respawn<color=\"white\"> at the last visited totem.";
 			tutIconObj.SetActive (false);
 			break;
 		case 3:
@@ -99,7 +99,7 @@ public class TutorialController : MonoBehaviour {
 
 			break;
 		case 9:
-			tutDescription.text = "Kalu can hide behind shorter foliage if he is <color=\"purple\">crawling.<color=\"white\"\nDon't forget you can crawl under some tree trunks.";
+			tutDescription.text = "Kalu can hide behind shorter foliage if he is <color=\"purple\">crawling.<color=\"white\">\nDon't forget you can crawl under some tree trunks.";
 			break;
 		case 10:
 			tutDescription.text = "Nicely done! You've learnt all the basic controls. \ntry get past the final puzzle";
