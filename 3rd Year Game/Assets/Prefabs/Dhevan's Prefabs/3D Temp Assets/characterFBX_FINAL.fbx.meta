@@ -9,7 +9,27 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: PM3D_character
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PM3D_character
+    second: {fileID: 2100000, guid: bfb791782a130c24b91282bbc179d855, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PM3D_character_DM
+    second: {fileID: 2800000, guid: fcdf6beb287fae3458b266dc827b05a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PM3D_character_NM
+    second: {fileID: 2800000, guid: 280c5ecf5d7326a4c8508c1ede1b65cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PM3D_character_TXTR
+    second: {fileID: 2800000, guid: 4f2b3d9af42ba4c4ab545d2774e607fa, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
