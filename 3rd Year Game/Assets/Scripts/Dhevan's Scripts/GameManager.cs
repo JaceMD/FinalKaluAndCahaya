@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 
 	private bool gamePaused = false;
 	public GameObject onScreenPauseText;
+	
 
 	void Start() 
 	{
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour {
 
 	void Update()
 	{
+		
 		controller = InputManager.ActiveDevice;
 		if (controller.Action2.WasPressed) {
 			if (gamePaused == false) {
@@ -50,6 +52,7 @@ public class GameManager : MonoBehaviour {
 				//Application.Quit ();
 			}
 		}
+
 
 
 

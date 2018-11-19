@@ -72,6 +72,9 @@ public class BullyController : MonoBehaviour {
 			gameOver = false;
 			currentAlertTime = alertTime;
 			this.transform.position = initialPos;
+			for (int i = 0; i < 9;i++){
+				eyeObjs [i].GetComponent<SkinnedMeshRenderer> ().material = alertMat;
+			}
 			charAnim.SetInteger ("State", 0);
 		} else if(gameOver == true) {
 			if(canMoveTowardPlayer == true){

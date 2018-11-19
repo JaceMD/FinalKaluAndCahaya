@@ -99,7 +99,7 @@ public class TutorialController : MonoBehaviour {
 
 			break;
 		case 9:
-			tutDescription.text = "Kalu can hide behind shorter foliage if he is <color=\"purple\">crawling.";
+			tutDescription.text = "Kalu can hide behind shorter foliage if he is <color=\"purple\">crawling.<color=\"white\"\nDon't forget you can crawl under some tree trunks.";
 			break;
 		case 10:
 			tutDescription.text = "Nicely done! You've learnt all the basic controls. \ntry get past the final puzzle";
