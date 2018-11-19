@@ -16185,7 +16185,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 293343763}
+  SuppChar: {fileID: 0}
+  MainCamera: {fileID: 0}
   CheckPointLocation: {x: 0, y: 0, z: 0}
+  ActivateFade: {fileID: 0}
+  Fallen: 0
 --- !u!65 &480418816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25255,6 +25259,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelController: {fileID: 480418815}
+  Fireflies: {fileID: 0}
+  tutorialNum: 0
 --- !u!65 &634572925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25913,6 +25919,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelController: {fileID: 480418815}
+  Fireflies: {fileID: 0}
+  tutorialNum: 0
 --- !u!65 &668534679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53955,6 +53963,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelController: {fileID: 480418815}
+  Fireflies: {fileID: 0}
+  tutorialNum: 0
 --- !u!65 &1259276771
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54892,6 +54902,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelController: {fileID: 480418815}
+  Fireflies: {fileID: 0}
+  tutorialNum: 0
 --- !u!65 &1290128605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55723,6 +55735,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelController: {fileID: 480418815}
+  Fireflies: {fileID: 0}
+  tutorialNum: 0
 --- !u!65 &1312570537
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57983,6 +57997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelController: {fileID: 480418815}
+  Fireflies: {fileID: 0}
+  tutorialNum: 0
 --- !u!65 &1417187250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58087,6 +58103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LightSource: {fileID: 110127672}
+  IndirectLight: {fileID: 0}
   SupportCharacter: {fileID: 230257417}
   Tree: {fileID: 1466126203}
   SetTimer: 1
@@ -58094,6 +58111,14 @@ MonoBehaviour:
   Enemy: {fileID: 232950519}
   PlayerMovement: {fileID: 293343765}
   getMoveSpeed: 0
+  MoveEnemy: {fileID: 0}
+  ThicketEndPos: {x: 207.66, y: 0.8, z: 3.28}
+  ActivateFade: {fileID: 0}
+  daySkybox: {fileID: 0}
+  nightSkybox: {fileID: 0}
+  PPCameraFilter: {fileID: 0}
+  daytimeCC: {fileID: 0}
+  nightTimeCC: {fileID: 0}
 --- !u!65 &1419850727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61061,7 +61086,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b08d3a375759541a48a56100db05f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  pausePanel: {fileID: 0}
+  onScreenPauseText: {fileID: 0}
 --- !u!1 &1544583341
 GameObject:
   m_ObjectHideFlags: 0
@@ -71456,6 +71482,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1797121174}
   m_Mesh: {fileID: 4300002, guid: f0087af64762b7a4991a5b5bfce424fc, type: 3}
+--- !u!1 &1800455494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800455495}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1800455495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1800455494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -52.597496, y: -18.082384, z: 94.29321}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1804930334
 GameObject:
   m_ObjectHideFlags: 0
@@ -75098,6 +75152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelController: {fileID: 480418815}
+  Fireflies: {fileID: 0}
+  tutorialNum: 0
 --- !u!65 &1933162933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75387,6 +75443,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelController: {fileID: 480418815}
+  Fireflies: {fileID: 0}
+  tutorialNum: 0
 --- !u!65 &1948895371
 BoxCollider:
   m_ObjectHideFlags: 0
