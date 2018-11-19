@@ -68,7 +68,7 @@ public class TutorialController : MonoBehaviour {
 
 			break;
 		case 2:
-			tutDescription.text = "these <color=\"purple\">big totems <color=\"white\">are <color=\"purple\">checkpoints<color=\"white\">.\nif Kalu <color=\"red\">feints or falls off the map <color=\"white\">.he'll <color=\"red\">respawn<color=\"white\"> at the last visited totem.";
+			tutDescription.text = "these <color=\"purple\">big totems <color=\"white\">are <color=\"purple\">checkpoints<color=\"white\">.\nif Kalu <color=\"red\">feints or falls off the map <color=\"white\">.he'll <color=\"red\">respawn<color=\"white\"> at the last totem visited.";
 			tutIconObj.SetActive (false);
 			break;
 		case 3:
