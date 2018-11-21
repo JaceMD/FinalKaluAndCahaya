@@ -31,6 +31,11 @@ public class MainMenuController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		controller = InputManager.ActiveDevice;
+
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit ();
+		}
+
 		if (selectedOption == true && Time.time >= startSelectionTime + 0.3f) {
 			switch(buttonCounter){
 			case 1:
