@@ -58,8 +58,6 @@ public class MainCharacterController : MonoBehaviour
 	[SerializeField]
 	private bool underTrunk = false;
 
-	public AudioSource sFXSource;
-	public AudioClip walkingSFX;
 
 	// Use this for initialization
 	void Start ()
