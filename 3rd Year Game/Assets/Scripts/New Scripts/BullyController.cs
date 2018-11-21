@@ -99,7 +99,7 @@ public class BullyController : MonoBehaviour {
 			EnemyDetectionUI.gameObject.SetActive (true);
 			rotateTowardPlayer ();
 			if (currentAlertTime <= 0f) {
-				source.PlayOneShot (spottedGrowlSFX, 0.45f);
+				source.PlayOneShot (spottedGrowlSFX, 0.4f);
 				gameOver = true;
 				startGameOverTime = Time.time;
 				EnemyDetectionUI.gameObject.GetComponent<MeshRenderer> ().material = spottedMat;
