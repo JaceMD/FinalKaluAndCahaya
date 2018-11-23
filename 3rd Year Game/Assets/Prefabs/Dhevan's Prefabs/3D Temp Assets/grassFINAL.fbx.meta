@@ -9,7 +9,22 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: PM3D_grass_OBJ
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PM3D_grass_OBJ
+    second: {fileID: 2100000, guid: 9fbaf58df5557b5448e6aeaffb13d897, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PM3D_grass_OBJ_NM
+    second: {fileID: 2800000, guid: 6048e901220fcc643ae3c940ecd45238, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PM3D_grass_OBJ_TXTR
+    second: {fileID: 2800000, guid: b10ed9077123c454e9dca24fb1cef1cf, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
