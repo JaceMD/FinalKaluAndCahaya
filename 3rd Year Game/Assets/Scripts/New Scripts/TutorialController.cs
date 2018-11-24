@@ -41,7 +41,7 @@ public class TutorialController : MonoBehaviour
 		if (tutBoxEnabled == true) {
 			if (tutPanelActive == true) {
 				if (controller.Action1.WasPressed == true) {
-					source.PlayOneShot (tutBoxSFX, 0.7f);
+					source.PlayOneShot (tutBoxSFX, 0.4f);
 					tutorialPanel.SetActive (false);
 					tutPanelActive = false;
 					openTutBoxText.SetActive (true);
@@ -51,7 +51,7 @@ public class TutorialController : MonoBehaviour
 				TutScenario ();
 			} else if (tutPanelActive == false) {
 				if (controller.Action1.WasPressed == true) {
-					source.PlayOneShot (tutBoxSFX, 0.7f);
+					source.PlayOneShot (tutBoxSFX, 0.4f);
 					tutorialPanel.SetActive (true);
 					tutPanelActive = true;
 					openTutBoxText.SetActive (false);
