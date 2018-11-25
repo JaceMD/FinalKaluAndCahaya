@@ -24,7 +24,7 @@ public class NightTriggerController : MonoBehaviour
 	public PostProcessingBehaviour PPCameraFilter;
 	public PostProcessingProfile daytimeCC, nightTimeCC;
 
-	public GameObject nightAmbientSource, dayAmbientSource;
+	public GameObject nightAmbientSource, dayAmbientSource, horrorAmbienceSource;
 
 	// Use this for initialization
 	void Start ()
@@ -68,6 +68,7 @@ public class NightTriggerController : MonoBehaviour
 				Enemy.SetActive (false);
 				dayAmbientSource.SetActive (false);
 				nightAmbientSource.SetActive(true);
+				horrorAmbienceSource.SetActive (true);
 			}
 		} 
 	}

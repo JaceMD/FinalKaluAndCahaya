@@ -28,24 +28,25 @@ public class GameManager : MonoBehaviour {
 
 	void Update()
 	{
-		
+
 		controller = InputManager.ActiveDevice;
 		if (controller.Action2.WasPressed) {
 			if (gamePaused == false) {
-				source.PlayOneShot (pauseMenuSFX, 0.5f);
+				source.PlayOneShot (pauseMenuSFX, 0.4f);
 				gamePaused = true;
 				//show pause menu and pause game
 				pausePanel.SetActive(true);
 				onScreenPauseText.SetActive (false);
 				Time.timeScale = 0f;
-
+				this.gameObject.GetComponent<TutorialController> ().disableTutMenu ();
 			} else {
 				//Unpause game and hide pause menu.
-				source.PlayOneShot (pauseMenuSFX, 0.5f);
+				source.PlayOneShot (pauseMenuSFX, 0.4f);
 				gamePaused = false;
 				pausePanel.SetActive (false);
 				onScreenPauseText.SetActive (true);
 				Time.timeScale = 1;
+				this.gameObject.GetComponent<TutorialController> ().enableTutMenu ();
 			}
 		}
 
@@ -59,11 +60,8 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 
-
-
-
-
 	}
+
 
 
 }

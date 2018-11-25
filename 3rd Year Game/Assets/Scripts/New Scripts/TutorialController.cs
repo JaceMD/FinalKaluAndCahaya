@@ -5,7 +5,8 @@ using TMPro;
 using InControl;
 using UnityEngine.UI;
 
-public class TutorialController : MonoBehaviour {
+public class TutorialController : MonoBehaviour
+{
 
 	private InputDevice controller;
 
@@ -19,42 +20,50 @@ public class TutorialController : MonoBehaviour {
 	public TMP_Text tutDescription;
 	public GameObject tutIconObj;
 	public Image tutIcon;
-	public Sprite RightStick, eye; 
+	public Sprite RightStick, eye;
 	public AudioSource source;
 	public AudioClip hintSFX, tutBoxSFX;
-	
+	private bool tutBoxEnabled = true;
+
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		tutorialPanel.SetActive (true);
 		tutPanelActive = true;
 		openTutBoxText.SetActive (false);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		controller = InputManager.ActiveDevice;
-		if (tutPanelActive == true) {
-			if (controller.Action1.WasPressed == true) {
-				source.PlayOneShot (tutBoxSFX, 0.7f);
-				tutorialPanel.SetActive (false);
-				tutPanelActive = false;
-				openTutBoxText.SetActive (true);
-			}
 
-			TutScenario ();
-		} else if(tutPanelActive == false) {
-			if (controller.Action1.WasPressed == true) {
-				source.PlayOneShot (tutBoxSFX, 0.7f);
-				tutorialPanel.SetActive (true);
-				tutPanelActive = true;
-				openTutBoxText.SetActive (false);
+	// Update is called once per frame
+	void Update ()
+	{
+		controller = InputManager.ActiveDevice;
+		if (tutBoxEnabled == true) {
+			if (tutPanelActive == true) {
+				if (controller.Action1.WasPressed == true) {
+					source.PlayOneShot (tutBoxSFX, 0.4f);
+					tutorialPanel.SetActive (false);
+					tutPanelActive = false;
+					openTutBoxText.SetActive (true);
+					TutScenario ();
+				}
+
+				TutScenario ();
+			} else if (tutPanelActive == false) {
+				if (controller.Action1.WasPressed == true) {
+					source.PlayOneShot (tutBoxSFX, 0.4f);
+					tutorialPanel.SetActive (true);
+					tutPanelActive = true;
+					openTutBoxText.SetActive (false);
+				}
 			}
 		}
-		
+
+
 	}
 
-	public void changeTutNum(int num){
+	public void changeTutNum (int num)
+	{
 		source.PlayOneShot (hintSFX, 0.4f);
 		tutorialNumTracker = num;
 		tutPanelActive = true;
@@ -62,12 +71,13 @@ public class TutorialController : MonoBehaviour {
 		openTutBoxText.SetActive (false);
 	}
 
-	void TutScenario(){
+	void TutScenario ()
+	{
 		switch (tutorialNumTracker) {
 		//All lower case for descriptions please
 		case 1:
 			tutDescription.text = "Use the <color=\"purple\">left analogue stick <color=\"white\">to move Kalu." +
-				"\n\nObjective: reach the end of the level.";
+			"\n\nObjective: reach the end of the level.";
 
 
 			break;
@@ -85,7 +95,7 @@ public class TutorialController : MonoBehaviour {
 			break;
 		case 5:
 			tutDescription.text = "The floating light creature is Cahaya. he projects light so that Kalu can see in the night." +
-				"\n<color=\"purple\">press the right analogue stick<color=\"white\"> to enable Cahaya's <color=\"purple\">light projection mode<color=\"white\"> then use the right analogue stick to <color=\"purple\">rotate<color=\"white\"> Cahaya and <color=\"purple\">dynamically create shadows.";
+			"\n<color=\"purple\">press the right analogue stick<color=\"white\"> to enable Cahaya's <color=\"purple\">light projection mode<color=\"white\"> then use the right analogue stick to <color=\"purple\">rotate<color=\"white\"> Cahaya and <color=\"purple\">dynamically create shadows.";
 			tutIconObj.SetActive (true);
 			tutIcon.sprite = RightStick;
 			break;
@@ -115,6 +125,32 @@ public class TutorialController : MonoBehaviour {
 			break;
 
 		}
+	}
+
+	public void enableTutMenu ()
+	{
+		tutBoxEnabled = true;
+
+		if (tutPanelActive == true) {
+			
+			tutorialPanel.SetActive (true);
+			tutPanelActive = true;
+			openTutBoxText.SetActive (false);
+
+			TutScenario ();
+		} else if (tutPanelActive == false) {
+
+			tutorialPanel.SetActive (false);
+			tutPanelActive = false;
+			openTutBoxText.SetActive (true);
+		}
+	}
+
+	public void disableTutMenu ()
+	{
+		tutBoxEnabled = false;
+		tutorialPanel.SetActive (false);
+		openTutBoxText.SetActive (false);
 	}
 
 }
